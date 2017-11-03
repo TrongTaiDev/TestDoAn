@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             Log.i("Đọc ảnh:", "Thành công");
-            Toast.makeText(getApplicationContext(), "Đọc thành công!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Đọc thành công", Toast.LENGTH_SHORT).show();
         }
     }
 }
