@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.trongtai.opencv.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnChonAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Chọn ảnh"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnChonAnh"
+        android:layout_weight="1"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnChonAnh"
+        android:text="Step 1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnConvert"
+        android:text="Step 2"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnStep2"
+        android:text="Step 3"
+        android:textStyle="bold" />
+</RelativeLayout>
